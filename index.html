@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://revstack.si/">
   <link rel="stylesheet" href="style.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFDGXV8ZH8"></script>
   <script>
@@ -61,5 +62,10 @@
   <footer>
     &copy; 2026 Sharoze Iftikhar. All rights reserved.
   </footer>
+  <script>
+    document.querySelector('.inquiry-form').addEventListener('submit', function () {
+      gtag('event', 'generate_lead', { form: 'domain_inquiry', transport_type: 'beacon' });
+    });
+  </script>
 </body>
 </html>
